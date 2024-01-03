@@ -6,56 +6,122 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @State private var showModal = false
+    @StateObject var subscriptionManager = SubscriptionManager()
+    
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        TabView {
+            NavigationView {
+                VStack {
+                    if subscriptionManager.subscriptions.isEmpty {
+                        EmptyStateView(showModal: $showModal)
+                            .environmentObject(subscriptionManager)
+                    } else {
+                        SubscriptionSum(subscriptionManager: subscriptionManager)
+                        List {
+                            ForEach(subscriptionManager.subscriptions, id: \.id) { subscription in
+                                SubscriptionCard(subscriptionManager: subscriptionManager, subscription: subscription)
+                            }
+                            .onDelete(perform: deleteSubscription)
+                        }
                     }
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                .navigationTitle("Subscriptions")
+                .navigationBarTitleDisplayMode(.large)
+                .navigationBarItems(trailing: addButton)
+                .onAppear {
+                    subscriptionManager.fetchSubscriptions()
                 }
             }
-        } detail: {
-            Text("Select an item")
+            .tabItem {
+                Image(systemName: "list.bullet")
+                Text("Subscriptions")
+            }
+            
+            AnalyticsView(subscriptionManager: subscriptionManager)
+                            .tabItem {
+                                Image(systemName: "chart.line.uptrend.xyaxis")
+                                Text("Analytics")
+                }
+            SettingsView(subscriptionManager: subscriptionManager)
+
+        .tabItem {
+            Image(systemName: "gearshape.fill")
+            Text("Settings")
+        }
+}
+        .accentColor(Color.purple)
+        .onAppear {
+            subscriptionManager.fetchSubscriptions()
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+    var addButton: some View {
+        Button(action: {
+            showModal = true
+        }) {
+            Text("Add new").bold()
+        }
+        .sheet(isPresented: $showModal) {
+            SubscriptionView(subscriptionManager: subscriptionManager,
+                             subscription: Subscription(name: "",
+                                                        price: 0.0,
+                                                        currency: "R$",
+                                                        cycle: "Monthly",
+                                                        startDate: Date(),
+                                                        remindMe: false,
+                                                        priceInBRL: 0.0),
+                             isEditMode: false)
         }
     }
 
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+    private func deleteSubscription(at offsets: IndexSet) {
+        offsets.forEach { index in
+            let subscriptionToDelete = subscriptionManager.subscriptions[index]
+            subscriptionManager.deleteSubscription(subscriptionToDelete)
         }
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+struct EmptyStateView: View {
+    @EnvironmentObject var subscriptionManager: SubscriptionManager
+    @Binding var showModal: Bool
+    
+    var body: some View {
+        VStack {
+            Spacer()
+            ColorAnimationView()
+                .padding(.bottom, 32.0)
+            Text("You still don't have any\n subscriptions added")
+                .foregroundColor(.secondary)
+                .font(.headline)
+                .multilineTextAlignment(.center)
+            
+            Magical3DButton(
+                label: "Add new",
+                borderColor: Color(red: 0.3, green: 0, blue: 0.4),
+                bodyColor: .purple,
+                width: 120,
+                height: 50,
+                textColor: .white,
+                shadowColor: Color(red: 0.3, green: 0, blue: 0.4),
+                action: {
+                showModal = true
+            }
+            )
+
+            Spacer()
+        }
+        .offset(y: -24)
+    }
+}
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

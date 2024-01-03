@@ -7,22 +7,95 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1190CB2B3F3D200041366D /* Magical3DButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1190CA2B3F3D200041366D /* Magical3DButton.swift */; };
+		7F1190CF2B3F428A0041366D /* InfiniteScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1190CE2B3F428A0041366D /* InfiniteScroller.swift */; };
+		7F3622A42B48705500686765 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3622A32B48705500686765 /* SettingsView.swift */; };
+		7F5C40D62B46DF0800C2B9F2 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C40D52B46DF0700C2B9F2 /* AnalyticsView.swift */; };
 		7F71271A2B3F2F5600C90865 /* SubscriptionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7127192B3F2F5600C90865 /* SubscriptionsApp.swift */; };
 		7F71271C2B3F2F5600C90865 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F71271B2B3F2F5600C90865 /* ContentView.swift */; };
-		7F71271E2B3F2F5600C90865 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F71271D2B3F2F5600C90865 /* Item.swift */; };
 		7F7127202B3F2F5700C90865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F71271F2B3F2F5700C90865 /* Assets.xcassets */; };
 		7F7127232B3F2F5700C90865 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7127222B3F2F5700C90865 /* Preview Assets.xcassets */; };
+		7FA2BD942B4CB29600F4CA45 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA1C40E2B4CA5080000806E /* WidgetKit.framework */; };
+		7FA2BD952B4CB29600F4CA45 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA1C4102B4CA5080000806E /* SwiftUI.framework */; };
+		7FA2BD982B4CB29600F4CA45 /* SumWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2BD972B4CB29600F4CA45 /* SumWidgetBundle.swift */; };
+		7FA2BD9A2B4CB29600F4CA45 /* SumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2BD992B4CB29600F4CA45 /* SumWidget.swift */; };
+		7FA2BD9C2B4CB29700F4CA45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA2BD9B2B4CB29700F4CA45 /* Assets.xcassets */; };
+		7FA2BDA02B4CB29700F4CA45 /* SumWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7FA2BD932B4CB29600F4CA45 /* SumWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7FA2BDA42B4CB4B500F4CA45 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92ED92B44F9FD00C8A376 /* SubscriptionManager.swift */; };
+		7FA2BDA52B4CB56800F4CA45 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92ED12B44C86100C8A376 /* PersistenceController.swift */; };
+		7FA2BDA62B4CB5A400F4CA45 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92ED72B44F9CC00C8A376 /* Subscription.swift */; };
+		7FA2BDA72B4CB5A700F4CA45 /* SubscriptionEntity+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92ED52B44C90B00C8A376 /* SubscriptionEntity+Extensions.swift */; };
+		7FA2BDA92B4CB5BE00F4CA45 /* SubscriptionModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92ECE2B44C7A300C8A376 /* SubscriptionModel.xcdatamodeld */; };
+		7FA2BDB72B4CB69700F4CA45 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC397122B44963D00733300 /* SplashScreenView.swift */; };
+		7FA2BDBA2B4CBE8800F4CA45 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA0F392B3F4F0200A12E42 /* Item.swift */; };
+		7FA2BDBD2B4CBEB500F4CA45 /* SubscriptionSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC397102B44801900733300 /* SubscriptionSum.swift */; };
+		7FC347312B405D9B003BFA97 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC347302B405D9B003BFA97 /* SubscriptionView.swift */; };
+		7FC347332B408F9E003BFA97 /* SubscriptionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC347322B408F9E003BFA97 /* SubscriptionCard.swift */; };
+		7FC397112B44801900733300 /* SubscriptionSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC397102B44801900733300 /* SubscriptionSum.swift */; };
+		7FC92ED02B44C7A300C8A376 /* SubscriptionModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92ECE2B44C7A300C8A376 /* SubscriptionModel.xcdatamodeld */; };
+		7FC92ED22B44C86100C8A376 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92ED12B44C86100C8A376 /* PersistenceController.swift */; };
+		7FC92ED62B44C90B00C8A376 /* SubscriptionEntity+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92ED52B44C90B00C8A376 /* SubscriptionEntity+Extensions.swift */; };
+		7FC92ED82B44F9CC00C8A376 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92ED72B44F9CC00C8A376 /* Subscription.swift */; };
+		7FC92EDA2B44F9FD00C8A376 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92ED92B44F9FD00C8A376 /* SubscriptionManager.swift */; };
+		7FC92EDC2B44FA4700C8A376 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC92EDB2B44FA4700C8A376 /* ImagePicker.swift */; };
+		7FCA0F3A2B3F4F0200A12E42 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA0F392B3F4F0200A12E42 /* Item.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7FA2BD9E2B4CB29700F4CA45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F71270E2B3F2F5600C90865 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FA2BD922B4CB29600F4CA45;
+			remoteInfo = SumWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7FA1C4242B4CA5090000806E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7FA2BDA02B4CB29700F4CA45 /* SumWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7F1190CA2B3F3D200041366D /* Magical3DButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magical3DButton.swift; sourceTree = "<group>"; };
+		7F1190CE2B3F428A0041366D /* InfiniteScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScroller.swift; sourceTree = "<group>"; };
+		7F3622A32B48705500686765 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7F5C40D52B46DF0700C2B9F2 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
 		7F7127162B3F2F5600C90865 /* Subscriptions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subscriptions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7127192B3F2F5600C90865 /* SubscriptionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsApp.swift; sourceTree = "<group>"; };
 		7F71271B2B3F2F5600C90865 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7F71271D2B3F2F5600C90865 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7F71271F2B3F2F5700C90865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F7127222B3F2F5700C90865 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F7127242B3F2F5700C90865 /* Subscriptions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Subscriptions.entitlements; sourceTree = "<group>"; };
 		7F7127252B3F2F5700C90865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FA1C40E2B4CA5080000806E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7FA1C4102B4CA5080000806E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7FA2BD932B4CB29600F4CA45 /* SumWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SumWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FA2BD972B4CB29600F4CA45 /* SumWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumWidgetBundle.swift; sourceTree = "<group>"; };
+		7FA2BD992B4CB29600F4CA45 /* SumWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumWidget.swift; sourceTree = "<group>"; };
+		7FA2BD9B2B4CB29700F4CA45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FA2BD9D2B4CB29700F4CA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FA2BDB82B4CBD0D00F4CA45 /* SumWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SumWidgetExtension.entitlements; sourceTree = "<group>"; };
+		7FC347302B405D9B003BFA97 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
+		7FC347322B408F9E003BFA97 /* SubscriptionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCard.swift; sourceTree = "<group>"; };
+		7FC397102B44801900733300 /* SubscriptionSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSum.swift; sourceTree = "<group>"; };
+		7FC397122B44963D00733300 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		7FC92ECF2B44C7A300C8A376 /* SubscriptionModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SubscriptionModel.xcdatamodel; sourceTree = "<group>"; };
+		7FC92ED12B44C86100C8A376 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		7FC92ED52B44C90B00C8A376 /* SubscriptionEntity+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubscriptionEntity+Extensions.swift"; sourceTree = "<group>"; };
+		7FC92ED72B44F9CC00C8A376 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		7FC92ED92B44F9FD00C8A376 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		7FC92EDB2B44FA4700C8A376 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		7FCA0F392B3F4F0200A12E42 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,13 +106,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FA2BD902B4CB29600F4CA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA2BD952B4CB29600F4CA45 /* SwiftUI.framework in Frameworks */,
+				7FA2BD942B4CB29600F4CA45 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7F71270D2B3F2F5600C90865 = {
 			isa = PBXGroup;
 			children = (
+				7FA2BDB82B4CBD0D00F4CA45 /* SumWidgetExtension.entitlements */,
+				7FC92ECE2B44C7A300C8A376 /* SubscriptionModel.xcdatamodeld */,
+				7FC92ED12B44C86100C8A376 /* PersistenceController.swift */,
 				7F7127182B3F2F5600C90865 /* Subscriptions */,
+				7FA2BD962B4CB29600F4CA45 /* SumWidget */,
+				7FA1C40D2B4CA5080000806E /* Frameworks */,
 				7F7127172B3F2F5600C90865 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				7F7127162B3F2F5600C90865 /* Subscriptions.app */,
+				7FA2BD932B4CB29600F4CA45 /* SumWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +145,19 @@
 			children = (
 				7F7127192B3F2F5600C90865 /* SubscriptionsApp.swift */,
 				7F71271B2B3F2F5600C90865 /* ContentView.swift */,
-				7F71271D2B3F2F5600C90865 /* Item.swift */,
+				7F3622A32B48705500686765 /* SettingsView.swift */,
+				7F5C40D52B46DF0700C2B9F2 /* AnalyticsView.swift */,
+				7FC397122B44963D00733300 /* SplashScreenView.swift */,
+				7FC347322B408F9E003BFA97 /* SubscriptionCard.swift */,
+				7FC347302B405D9B003BFA97 /* SubscriptionView.swift */,
+				7FC92EDB2B44FA4700C8A376 /* ImagePicker.swift */,
+				7FC92ED92B44F9FD00C8A376 /* SubscriptionManager.swift */,
+				7FC92ED72B44F9CC00C8A376 /* Subscription.swift */,
+				7FC92ED52B44C90B00C8A376 /* SubscriptionEntity+Extensions.swift */,
+				7FC397102B44801900733300 /* SubscriptionSum.swift */,
+				7F1190CE2B3F428A0041366D /* InfiniteScroller.swift */,
+				7FCA0F392B3F4F0200A12E42 /* Item.swift */,
+				7F1190CA2B3F3D200041366D /* Magical3DButton.swift */,
 				7F71271F2B3F2F5700C90865 /* Assets.xcassets */,
 				7F7127242B3F2F5700C90865 /* Subscriptions.entitlements */,
 				7F7127252B3F2F5700C90865 /* Info.plist */,
@@ -74,6 +174,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7FA1C40D2B4CA5080000806E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FA1C40E2B4CA5080000806E /* WidgetKit.framework */,
+				7FA1C4102B4CA5080000806E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FA2BD962B4CB29600F4CA45 /* SumWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2BD972B4CB29600F4CA45 /* SumWidgetBundle.swift */,
+				7FA2BD992B4CB29600F4CA45 /* SumWidget.swift */,
+				7FA2BD9B2B4CB29700F4CA45 /* Assets.xcassets */,
+				7FA2BD9D2B4CB29700F4CA45 /* Info.plist */,
+			);
+			path = SumWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,15 +204,34 @@
 				7F7127122B3F2F5600C90865 /* Sources */,
 				7F7127132B3F2F5600C90865 /* Frameworks */,
 				7F7127142B3F2F5600C90865 /* Resources */,
+				7FA1C4242B4CA5090000806E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7FA2BD9F2B4CB29700F4CA45 /* PBXTargetDependency */,
 			);
 			name = Subscriptions;
 			productName = Subscriptions;
 			productReference = 7F7127162B3F2F5600C90865 /* Subscriptions.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7FA2BD922B4CB29600F4CA45 /* SumWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FA2BDA32B4CB29700F4CA45 /* Build configuration list for PBXNativeTarget "SumWidgetExtension" */;
+			buildPhases = (
+				7FA2BD8F2B4CB29600F4CA45 /* Sources */,
+				7FA2BD902B4CB29600F4CA45 /* Frameworks */,
+				7FA2BD912B4CB29600F4CA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SumWidgetExtension;
+			productName = SumWidgetExtension;
+			productReference = 7FA2BD932B4CB29600F4CA45 /* SumWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +244,9 @@
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					7F7127152B3F2F5600C90865 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					7FA2BD922B4CB29600F4CA45 = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
@@ -123,6 +265,7 @@
 			projectRoot = "";
 			targets = (
 				7F7127152B3F2F5600C90865 /* Subscriptions */,
+				7FA2BD922B4CB29600F4CA45 /* SumWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +280,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FA2BD912B4CB29600F4CA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA2BD9C2B4CB29700F4CA45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -144,13 +295,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA2BDB72B4CB69700F4CA45 /* SplashScreenView.swift in Sources */,
 				7F71271C2B3F2F5600C90865 /* ContentView.swift in Sources */,
-				7F71271E2B3F2F5600C90865 /* Item.swift in Sources */,
+				7F5C40D62B46DF0800C2B9F2 /* AnalyticsView.swift in Sources */,
+				7FC92ED02B44C7A300C8A376 /* SubscriptionModel.xcdatamodeld in Sources */,
+				7FC397112B44801900733300 /* SubscriptionSum.swift in Sources */,
+				7FC92ED22B44C86100C8A376 /* PersistenceController.swift in Sources */,
+				7F3622A42B48705500686765 /* SettingsView.swift in Sources */,
+				7FC92ED82B44F9CC00C8A376 /* Subscription.swift in Sources */,
+				7FC347312B405D9B003BFA97 /* SubscriptionView.swift in Sources */,
+				7F1190CB2B3F3D200041366D /* Magical3DButton.swift in Sources */,
+				7FC347332B408F9E003BFA97 /* SubscriptionCard.swift in Sources */,
+				7FC92ED62B44C90B00C8A376 /* SubscriptionEntity+Extensions.swift in Sources */,
+				7FCA0F3A2B3F4F0200A12E42 /* Item.swift in Sources */,
+				7FC92EDA2B44F9FD00C8A376 /* SubscriptionManager.swift in Sources */,
+				7FC92EDC2B44FA4700C8A376 /* ImagePicker.swift in Sources */,
+				7F1190CF2B3F428A0041366D /* InfiniteScroller.swift in Sources */,
 				7F71271A2B3F2F5600C90865 /* SubscriptionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FA2BD8F2B4CB29600F4CA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA2BD982B4CB29600F4CA45 /* SumWidgetBundle.swift in Sources */,
+				7FA2BDBA2B4CBE8800F4CA45 /* Item.swift in Sources */,
+				7FA2BD9A2B4CB29600F4CA45 /* SumWidget.swift in Sources */,
+				7FA2BDA42B4CB4B500F4CA45 /* SubscriptionManager.swift in Sources */,
+				7FA2BDA92B4CB5BE00F4CA45 /* SubscriptionModel.xcdatamodeld in Sources */,
+				7FA2BDA52B4CB56800F4CA45 /* PersistenceController.swift in Sources */,
+				7FA2BDA62B4CB5A400F4CA45 /* Subscription.swift in Sources */,
+				7FA2BDBD2B4CBEB500F4CA45 /* SubscriptionSum.swift in Sources */,
+				7FA2BDA72B4CB5A700F4CA45 /* SubscriptionEntity+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FA2BD9F2B4CB29700F4CA45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FA2BD922B4CB29600F4CA45 /* SumWidgetExtension */;
+			targetProxy = 7FA2BD9E2B4CB29700F4CA45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7F7127262B3F2F5700C90865 /* Debug */ = {
@@ -275,8 +464,12 @@
 		7F7127292B3F2F5700C90865 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=*]" = "AppIconSteddy AppIconLinear";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = all;
 				CODE_SIGN_ENTITLEMENTS = Subscriptions/Subscriptions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -306,8 +499,12 @@
 		7F71272A2B3F2F5700C90865 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=*]" = "AppIconSteddy AppIconLinear";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = all;
 				CODE_SIGN_ENTITLEMENTS = Subscriptions/Subscriptions.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -328,6 +525,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nooma.Subscriptions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7FA2BDA12B4CB29700F4CA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SumWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B27B4ED4CL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SumWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SumWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nooma.Subscriptions.SumWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FA2BDA22B4CB29700F4CA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SumWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B27B4ED4CL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SumWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SumWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nooma.Subscriptions.SumWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,7 +608,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		7FA2BDA32B4CB29700F4CA45 /* Build configuration list for PBXNativeTarget "SumWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FA2BDA12B4CB29700F4CA45 /* Debug */,
+				7FA2BDA22B4CB29700F4CA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7FC92ECE2B44C7A300C8A376 /* SubscriptionModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7FC92ECF2B44C7A300C8A376 /* SubscriptionModel.xcdatamodel */,
+			);
+			currentVersion = 7FC92ECF2B44C7A300C8A376 /* SubscriptionModel.xcdatamodel */;
+			path = SubscriptionModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7F71270E2B3F2F5600C90865 /* Project object */;
 }
